@@ -36,7 +36,7 @@ function nextSequence(){
 }
 
 function playSound(name){
-  var audio = new Audio("sounds/"+name+".mp3");
+  var audio = new Audio("https://github.com/aark07/simon_game/blob/main/"+name+".mp3");
   audio.play();
 }
 
@@ -60,7 +60,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 200);
-    var lose = new Audio("sounds/lose.mp3");
+    var lose = new Audio("https://github.com/aark07/simon_game/blob/main/lose.mp3");
     lose.play();
     startOver();
   }
@@ -74,7 +74,7 @@ function startOver(){
 }
 
 function bgmusic (){
-  var Tetris = new Audio("sounds/Tetris.mp3");
+  var Tetris = new Audio("https://github.com/aark07/simon_game/blob/main/Tetris.mp3");
   Tetris.play();
 }
 
